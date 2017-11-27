@@ -11,23 +11,25 @@
 <body>
 		<header id="header" class="">
 			<ul class="nav-list">
-					<label for="tg" class="label">≡</label>
-					<input id="tg" class="dropbox" type="checkbox" name="">
 					<a href="index.html" title="">
 						<img class="nav-image" src="img/logo.png" alt="">
 					</a>
-				<li class="nav-list-item animation">
-					<a href="" title="">Portfolio</a>
-				</li>
-				<li class="nav-list-item animation">
-					<a href="" title="">Feature</a>
-				</li>
-				<li class="nav-list-item animation">
-					<a href="" title="">Profile</a>
-				</li>
-				<li class="nav-list-item animation">
-					<a href="" title="">Contact</a>
-				</li>
+					<label for="tg" class="label">≡</label>
+					<input id="tg" class="dropbox" type="checkbox" name="">
+					<ul class="nav-list-item-parent animation">
+						<li class="nav-list-item animation">
+							<a href="" title="">Portfolio</a>
+						</li>
+						<li class="nav-list-item animation">
+							<a href="" title="">Feature</a>
+						</li>
+						<li class="nav-list-item animation">
+							<a href="" title="">Profile</a>
+						</li>
+						<li class="nav-list-item animation">
+							<a href="" title="">Contact</a>
+						</li>
+					</ul>
 			</ul>
 		</header><!-- /header -->
 		<div class="main-visual">
@@ -112,21 +114,25 @@
 				<div>
 					<p class="contact-contact"> Contact</p>
 					<div class="line"></div>
-					<p class="contact-text">
-						It is a long established fact tha a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters
-					</p>
+					<p class="portfolio-maintext">
+							It is a long established fact tha a reader will be distracted by the readable <br>
+							content of a page when looking at its layout. <br>
+							The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters
+						</p>
 				</div>
 				<div class="contact-box-left">
-					<p class="contact-heading"> Mail</p>
-					<p class="contact-heading"> sample@sample.com</p>
-					<p class="contact-heading"> Tell</p>
-					<p class="contact-heading"> 000-0000-0000</p>
+					<div class="contact-heading-mail"> Mail</div>
+					<span class="contact-heading2"> sample@sample.com</span>
+					<div class="contact-heading-tell"> Tell</div>
+					<span class="contact-heading2"> 000-0000-0000</span>
 				</div>
 				<div class="contact-box-right">
-					<p class="contact-heading-right"> SNS</p>
-					<i class="fa fa-facebook"></i>
-					<i class="fa fa-twitter"></i>
-					<i class="fa fa-instagram"></i>
+					<span class="contact-heading-right"> SNS</span>
+					<div class="sns-icon-box">
+						<li class="fa fa-facebook"></li>
+						<li class="fa fa-twitter"></li>
+						<li class="fa fa-instagram"></li>
+					</div>
 				</div>
 			</div>
 		</main>

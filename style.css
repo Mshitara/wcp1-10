@@ -31,14 +31,23 @@ a  {
 .nav-image {
 	float: left;
 	height: 70px;
-	margin-right: 300px;
+	/*margin-right: 300px;*/
+}
+.nav-list-item-parent {
+	font-size: 16px;
+    display: inline;
+    list-style: none;
+    line-height: 70px;
+    float: right;
+    /*margin: 0 30px;*/
 }
 .nav-list-item {
-	padding: 30px;
 	font-size: 16px;
-	display: inline;
-	list-style: none;
-	line-height: 70px;
+    display: inline;
+    list-style: none;
+    line-height: 70px;
+    /*float: right;*/
+    margin: 0 30px;
 }
 .main-visual {
 	width: 100%;
@@ -77,11 +86,10 @@ a  {
 	color: #000000;
 }
 .line {
-	line-height: 8px;
 	height: 3px;
-	width: 70px;
-	margin: 0 auto;
-	background-color: #EC715F;
+    width: 70px;
+    margin: 8px auto 0 auto;
+    background-color: #EC715F;
 }
 .portfolio-maintext {
 	font-size: 16px;
@@ -147,9 +155,9 @@ a  {
 }
 .feature-content {
 	width: 320px;
-	font-size: 60px;
-	display: inline-block;
-	padding: 5px;
+    font-size: 60px;
+    display: inline-block;
+    padding: 0 5px 5px 5px;
 }
 .feature-content-heading {
 	font-size: 20px;
@@ -218,7 +226,7 @@ a  {
 }
 .contact {
 	padding: 90px 0;
-	width: 480px;
+	width: 800px;
 	font-size: 32px;
 	color: #000000;
 	margin: 0 auto;
@@ -237,29 +245,52 @@ a  {
 	color: #000000;
 }
 .contact-box-left {
-	width: 240px;
-	float: left;
-	text-align: left;
+	width: 400px;
+    float: left;
+    text-align: left;
+    padding-left: 150px;
+    font-size: 0;
 }
 .contact-box-right {
-	width: 240px;
-	float: left;
-	text-align: right
+	width: 400px;
+    float: left;
+    text-align: left;
+    padding-left: 100px;
+    font-size: 0;
 }
-.contact-heading {
+.contact-box-box {
+	margin: 0 auto;
+}
+.contact-heading-mail {
 	font-size: 20px;
 	color: #000000;
+}
+.contact-heading-tell {
+	font-size: 20px;
+	color: #000000;
+	padding-top: 20px;
+}
+.contact-heading2 {
+	font-size: 20px;
+	color: #000000;
+	border-bottom: solid;
+    border-width: 2px;
 }
 .contact-heading-right {
 	font-size: 20px;
-	color: #000000;
-	padding-left: 50px;
-	text-align: left;
+    color: #000000;
+    /* padding-left: 50px; */
+    text-align: left;
+    border-bottom: solid;
+    border-width: 2px;
 }
 .fa {
 	font-size: 50px;
 	display: inline-block;
 	color: #000000;
+}
+.sns-icon-box {
+	padding-top: 20px;
 }
 .fa-twitter {
 	padding: 0 20px;
@@ -277,10 +308,6 @@ a  {
 
 }
 @media screen and (max-width: 767px) {
-	body {
-		width: 90%;
-		margin: 0 auto;
-	}
 	#header {
 		height: 50px;
 	}
@@ -322,13 +349,22 @@ a  {
 	}
 	.label {
 		cursor: pointer;
-		font-size: 40px;
-		color: #fafafa;
-		position: relative;
-		z-index: 2;
-		line-height: 40px;
-    	padding: 8px;
-    	left: 60%;
+	    font-size: 40px;
+	    color: #fafafa;
+	    position: relative;
+	    z-index: 2;
+	    line-height: 40px;
+	    padding-right: 8px;
+	    /* left: 60%; */
+	    float: right;
+	}
+	.nav-list-item-parent {
+		font-size: 16px;
+	    display: inline;
+	    list-style: none;
+	    line-height: 70px;
+	    float: right;
+	    margin: 0 30px;
 	}
 	.nav-list-item {
 		padding: 0px;
@@ -338,16 +374,19 @@ a  {
 		text-align: right;
 		position: relative;
 		z-index: -1;
+		line-height: 20px;
+    	margin: 0;
 	}
-	.dropbox:checked ~ .nav-list-item {
-		padding: 0px;
-		font-size: 16px;
-		display: block;
-		list-style: none;
-		text-align: right;
-		position: relative;
-		z-index: 1;
-		line-height: 40px;
+	.dropbox:checked ~ .nav-list-item-parent {
+		cursor: pointer;
+	    font-size: 16px;
+	    color: #fafafa;
+	    position: relative;
+	    z-index: 2;
+	    line-height: 20px;
+	    padding-top: 50px;
+	    /* left: 60%; */
+	    float: right;
 	}
 	.nav-list {
 		width: 100%;
@@ -376,12 +415,12 @@ a  {
 	}
 	.main-visual-dummytext {
 		text-align: center;
-		font-size: 18px;
+		font-size: 14px;
 		color: #fafafa;
 		line-height: 10px;
 	}
 	.portfolio {
-		height: 1200px;
+		height: 1260px;
 		background: #ECEFF1;
 		text-align: center;
 		overflow: hidden;
@@ -397,16 +436,16 @@ a  {
 		color: #000000;
 	}
 	.line {
-		line-height: 8px;
 		height: 3px;
-		width: 70px;
-		margin: 0 auto;
-		background-color: #EC715F;
+	    width: 70px;
+	    margin: 8px auto 0 auto;
+	    background-color: #EC715F;
 	}
 	.portfolio-maintext {
 		font-size: 16px;
-		color: #000000;
-		padding: 30px 0;
+	    color: #000000;
+	    padding-top: 30px;
+	    padding-bottom: 30px;
 	}
 	.boxbox {
 		width: 100%;
@@ -479,25 +518,30 @@ a  {
 	}
 	.profile-content {
 		width: 100%;
-		padding-bottom: 20px;
+		padding-bottom: 90px;
 	}
 	.name {
 		font-size: 20px;
 		color: #000000;
 		padding-bottom: 5px;
+		text-align: center;
 	}
 	.name-text {
 		font-size: 16px;
 		color: #000000;
+		text-align: center;
+		padding-bottom: 15px;
 	}
 	.skills {
 		font-size: 20px;
 		color: #000000;
 		padding-bottom: 5px;
+		text-align: center;
 	}
 	.skills-text {
 		font-size: 16px;
 		color: #000000;
+		text-align: center;
 	}
 	.contact {
 		width: 100%;
@@ -514,14 +558,18 @@ a  {
 	.contact-box-left {
 		width: 100%;
 		text-align: center;
+		padding: 0px;
 	}
 	.contact-box-right {
 		width: 100%;
 		text-align: center;
+		padding: 0px;
+		padding-top: 20px;
 	}
 	.contact-heading {
 		font-size: 20px;
 		color: #000000;
+		padding: 0px;
 	}
 	.contact-heading-right {
 		font-size: 20px;
@@ -540,5 +588,8 @@ a  {
 	.animation {
 		-webkit-transition: all .3s;
 		transition: all .3s;
+	}
+	.sns-icon-box {
+		padding-top: 5px
 	}
 }
